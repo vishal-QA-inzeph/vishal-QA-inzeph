@@ -12,11 +12,13 @@ I recently graduated from AIT <img width="25" height="25" src="https://img.icons
 
 
 ### I learnt
-<img width="100" height="100" src="https://img.icons8.com/stickers/100/selenium-test-automation.png" alt="selenium-test-automation"/>
+<img width="50" height="50" src="https://img.icons8.com/stickers/100/selenium-test-automation.png" alt="selenium-test-automation"/>
 
 ### Tools I Use
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"/> 
+<img width="40" height="40" src="https://img.icons8.com/office/40/java-eclipse.png" alt="java-eclipse"/> ![Jira](https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=white)
 
-![Ramkumar's GitHub stats](https://github-readme-stats.vercel.app/api?username=ramkumardev07&theme=dark&show_icons=true&&hide=issues,contribs)
 
-[![Ramkumar's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=ramkumardev07&bg_color=000000&color=ffffff&line=4c919e&point=bababa&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+![vishal's Stats](https://github-readme-stats.vercel.app/api?username=vishal&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
+
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=vishal&bg_color=000000&color=c837be&line=4c9e86&point=d70fff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
