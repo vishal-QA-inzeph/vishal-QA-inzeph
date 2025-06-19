@@ -11,7 +11,8 @@ I recently graduated from AIT <img width="25" height="25" src="https://img.icons
 
 
 ### I learnt
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/css3.png" /><img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/><img width="50" height="50" src="https://img.icons8.com/plasticine/100/react.png" alt="react"/><img height="50" width="50" src="https://img.icons8.com/color/48/000000/mongodb.png"/> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png"/> <img width="48" height="48" src="https://img.icons8.com/color/48/postgreesql.png" alt="postgreesql"/> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/python.png" /> <img width="48" height="48" src="https://img.icons8.com/color/48/golang.png" alt="golang"/>
+<img width="100" height="100" src="https://img.icons8.com/stickers/100/selenium-test-automation.png" alt="selenium-test-automation"/>
+src="https://img.icons8.com/color/48/000000/css3.png" /><img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/><img width="50" height="50" src="https://img.icons8.com/plasticine/100/react.png" alt="react"/><img height="50" width="50" src="https://img.icons8.com/color/48/000000/mongodb.png"/> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png"/> <img width="48" height="48" src="https://img.icons8.com/color/48/postgreesql.png" alt="postgreesql"/> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/python.png" /> <img width="48" height="48" src="https://img.icons8.com/color/48/golang.png" alt="golang"/>
 ### Tools I Use
 <img height="50" width="50" src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"/> 
 
