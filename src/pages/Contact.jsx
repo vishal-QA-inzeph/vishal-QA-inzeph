@@ -53,8 +53,10 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate network delay
-    await new Promise((r) => setTimeout(r, 1200));
+
+    const mailtoUrl = `mailto:vishalsk797@gmail.com?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
+    window.location.href = mailtoUrl;
+
     setLoading(false);
     setSubmitted(true);
     setTimeout(() => {
