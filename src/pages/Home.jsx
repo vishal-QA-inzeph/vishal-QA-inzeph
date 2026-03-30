@@ -134,100 +134,193 @@ export default function Home() {
 
         <motion.div
           style={{ y: heroY, opacity: heroOpacity }}
-          className="relative z-10 max-w-5xl mx-auto px-6 text-center"
+          className="relative z-10 max-w-6xl mx-auto px-6"
         >
-          {/* Status badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-green-500/20 mb-8"
-          >
-            <span className="status-dot" />
-            <span className="font-mono text-xs text-green-400">Available for Opportunities</span>
-            <span className="font-mono text-xs text-slate-600">•</span>
-            <span className="font-mono text-xs text-slate-500">Chennai, India</span>
-          </motion.div>
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
 
-          {/* Name */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-syne font-bold text-5xl sm:text-6xl lg:text-7xl text-white leading-tight mb-4"
-          >
-            Vishal
-            <br />
-            <span className="gradient-text">Karthikeyan</span>
-          </motion.h1>
-
-          {/* Typing role */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="font-syne font-semibold text-2xl sm:text-3xl text-white mb-6 h-10"
-          >
-            <TypingText words={typingWords} />
-          </motion.div>
-
-          {/* Tagline */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-mono text-sm sm:text-base text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
-          >
-            1+ year ensuring software excellence through{' '}
-            <span className="text-accent-cyan">Selenium + TestNG</span>,{' '}
-            <span className="text-accent-blue">Playwright</span>, and rigorous{' '}
-            <span className="text-accent-purple">Manual Testing</span> across ERP, HRMS, SaaS, and EdTech platforms.
-          </motion.p>
-
-          {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.65 }}
-            className="flex flex-wrap items-center justify-center gap-4"
-          >
-            <Link to="/projects" className="btn-primary flex items-center gap-2">
-              View Projects <ArrowRight size={15} />
-            </Link>
-            <a href="/Vishal_Karthikeyan_Resume.pdf" download className="btn-outline flex items-center gap-2">
-              <Download size={15} /> Download Resume
-            </a>
-            <a href="mailto:vishalsk797@gmail.com" className="btn-outline flex items-center gap-2">
-              <Mail size={15} /> Let's Talk
-            </a>
-          </motion.div>
-
-          {/* Socials */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
-            className="flex items-center justify-center gap-4 mt-10"
-          >
-            {[
-              { icon: <Github size={16} />, href: 'https://github.com/vishalsk797', label: 'GitHub' },
-              { icon: <Linkedin size={16} />, href: 'https://linkedin.com/in/vishalsk797', label: 'LinkedIn' },
-              { icon: <Mail size={16} />, href: 'mailto:vishalsk797@gmail.com', label: 'Email' },
-            ].map((s) => (
-              <motion.a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -3, scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-10 h-10 rounded-xl glass-card border border-white/10 flex items-center justify-center text-slate-500 hover:text-accent-cyan hover:border-accent-cyan/30 transition-all duration-200"
-                aria-label={s.label}
+            {/* ── LEFT: Text Content ── */}
+            <div className="flex-1 text-center lg:text-left">
+              {/* Status badge */}
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-green-500/20 mb-8"
               >
-                {s.icon}
-              </motion.a>
-            ))}
-          </motion.div>
+                <span className="status-dot" />
+                <span className="font-mono text-xs text-green-400">Available for Opportunities</span>
+                <span className="font-mono text-xs text-slate-600">•</span>
+                <span className="font-mono text-xs text-slate-500">Chennai, India</span>
+              </motion.div>
+
+              {/* Name */}
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+                className="font-syne font-bold text-5xl sm:text-6xl lg:text-7xl text-white leading-tight mb-4"
+              >
+                Vishal
+                <br />
+                <span className="gradient-text">Karthikeyan</span>
+              </motion.h1>
+
+              {/* Typing role */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="font-syne font-semibold text-2xl sm:text-3xl text-white mb-6 h-10"
+              >
+                <TypingText words={typingWords} />
+              </motion.div>
+
+              {/* Tagline */}
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="font-mono text-sm sm:text-base text-slate-400 max-w-xl mb-10 leading-relaxed mx-auto lg:mx-0"
+              >
+                1+ year ensuring software excellence through{' '}
+                <span className="text-accent-cyan">Selenium + TestNG</span>,{' '}
+                <span className="text-accent-blue">Playwright</span>, and rigorous{' '}
+                <span className="text-accent-purple">Manual Testing</span> across ERP, HRMS, SaaS, and EdTech platforms.
+              </motion.p>
+
+              {/* CTAs */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.65 }}
+                className="flex flex-wrap items-center justify-center lg:justify-start gap-4"
+              >
+                <Link to="/projects" className="btn-primary flex items-center gap-2">
+                  View Projects <ArrowRight size={15} />
+                </Link>
+                <a href="/Vishal_Karthikeyan_Resume.pdf" download className="btn-outline flex items-center gap-2">
+                  <Download size={15} /> Download Resume
+                </a>
+                <a href="mailto:vishalsk797@gmail.com" className="btn-outline flex items-center gap-2">
+                  <Mail size={15} /> Let's Talk
+                </a>
+              </motion.div>
+
+              {/* Socials */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9 }}
+                className="flex items-center justify-center lg:justify-start gap-4 mt-10"
+              >
+                {[
+                  { icon: <Github size={16} />, href: 'https://github.com/vishalsk797', label: 'GitHub' },
+                  { icon: <Linkedin size={16} />, href: 'https://linkedin.com/in/vishalsk797', label: 'LinkedIn' },
+                  { icon: <Mail size={16} />, href: 'mailto:vishalsk797@gmail.com', label: 'Email' },
+                ].map((s) => (
+                  <motion.a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ y: -3, scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-10 h-10 rounded-xl glass-card border border-white/10 flex items-center justify-center text-slate-500 hover:text-accent-cyan hover:border-accent-cyan/30 transition-all duration-200"
+                    aria-label={s.label}
+                  >
+                    {s.icon}
+                  </motion.a>
+                ))}
+              </motion.div>
+            </div>
+
+            {/* ── RIGHT: Profile Photo ── */}
+            <motion.div
+              initial={{ opacity: 0, x: 60, scale: 0.9 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3, type: 'spring', stiffness: 80 }}
+              className="relative flex-shrink-0"
+            >
+              {/* Outer glow ring */}
+              <div
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: 'conic-gradient(from 0deg, #00f5d4, #38bdf8, #a78bfa, #00f5d4)',
+                  padding: '3px',
+                  borderRadius: '9999px',
+                  filter: 'blur(0px)',
+                  animation: 'spin 6s linear infinite',
+                }}
+              />
+
+              {/* Glow blur behind */}
+              <div
+                className="absolute -inset-4 rounded-full pointer-events-none"
+                style={{
+                  background: 'radial-gradient(circle, rgba(0,245,212,0.15) 0%, rgba(56,189,248,0.1) 40%, transparent 70%)',
+                  filter: 'blur(20px)',
+                }}
+              />
+
+              {/* Photo container */}
+              <div
+                className="relative z-10 rounded-full overflow-hidden"
+                style={{
+                  width: '280px',
+                  height: '280px',
+                  border: '3px solid transparent',
+                  background: 'linear-gradient(#0a0a1a, #0a0a1a) padding-box, linear-gradient(135deg, #00f5d4, #38bdf8, #a78bfa) border-box',
+                }}
+              >
+                <img
+                  src="/profile.jpg"
+                  alt="Vishal Karthikeyan - QA Engineer"
+                  className="w-full h-full object-cover object-top"
+                  style={{ objectPosition: 'center 10%' }}
+                  onError={(e) => {
+                    // Fallback: show initials avatar if image not found
+                    e.target.style.display = 'none';
+                    e.target.parentNode.style.background = 'linear-gradient(135deg, #1a1a2e, #16213e)';
+                    e.target.parentNode.innerHTML = '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:Syne,sans-serif;font-weight:700;font-size:72px;background:linear-gradient(135deg,#00f5d4,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">VK</div>';
+                  }}
+                />
+              </div>
+
+              {/* Floating badge – QA Engineer */}
+              <FloatingBadge
+                className="-bottom-4 -left-8 z-20"
+                delay={1.0}
+              >
+                <div className="flex items-center gap-2">
+                  <Shield size={13} className="text-accent-cyan" />
+                  <span className="font-mono text-[11px] text-white">QA Engineer</span>
+                </div>
+              </FloatingBadge>
+
+              {/* Floating badge – Bug Hunter */}
+              <FloatingBadge
+                className="-top-4 -right-8 z-20"
+                delay={1.2}
+              >
+                <div className="flex items-center gap-2">
+                  <Bug size={13} className="text-accent-purple" />
+                  <span className="font-mono text-[11px] text-white">Bug Hunter 🎯</span>
+                </div>
+              </FloatingBadge>
+
+              {/* Experience badge */}
+              <FloatingBadge
+                className="top-1/2 -right-14 z-20"
+                delay={1.4}
+              >
+                <div className="text-center">
+                  <div className="font-syne font-bold text-lg gradient-text leading-none">1+</div>
+                  <div className="font-mono text-[9px] text-slate-400">Yrs Exp</div>
+                </div>
+              </FloatingBadge>
+            </motion.div>
+
+          </div>
         </motion.div>
 
         {/* Scroll indicator */}
